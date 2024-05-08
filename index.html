@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; ">
+    <div id="main">
+        <h1 style="margin-left: 100px;">EMAIL - VERIFICATION</h1><br>
+        <h3 style="margin-left: 200px;">ENTER YOUR OTP</h3>
+      <p id="p1" style="background-color: red; width: 50px; margin-left: 250px;">000000</p><br>
+        <button id="bt1" style="margin-left: 225px; height: 50px; width: 100px;">click ME</button>
+    </div>
+
+    <script>
+       div1=document.getElementById("main")
+       btn1= document.getElementById("bt1")
+       btn1.addEventListener("click", ()=>{
+        p1=document.getElementById("p1");
+        p1.innerHTML=Math.floor(Math.random()*999999);
+        if(p1.length<4)
+        p1.innerHTML=Math.floor(Math.random()*999999); 
+       }
+    );
+       MAIN=document.getElementById("main")[0]
+       main.style.marginTop="120px"
+       main.style.marginLeft="400px"
+       main.style.padding="30px"
+       main.style.height="300px"
+       main.style.borderRadius="40px"
+       main.style.boxShadow="1px 1px 10px 10px  aqua"
+       main.style.width="600px"
+       main.style.color="white"
+       main.style.backgroundColor="black"
+      
+       H1=document.getElementsByTagName("h1")[1]
+       h1.style.marginLeft="5px"
+
+       H3=document.getElementsByTagName("h3")[1]
+      
+       BT1=document.getElementById("bt1")
+       bt1.style.height="200px"
+    </script>
+</body>
+</html>       
